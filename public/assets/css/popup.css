@@ -1,0 +1,32 @@
+.popup-container {
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100vh;
+}
+
+.popup-container.active {
+    display: flex;
+}
+
+.popup {
+    background: #f1fafc;
+    border-radius: 20px;
+    padding-inline: 32px;
+    padding-block: 16px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    z-index: 1000;
+}
+
+.popup .cancel {
+    background: #afafaf;
+}
+
+.popup .cancel:hover {
+    background: #afafafa2;
+}

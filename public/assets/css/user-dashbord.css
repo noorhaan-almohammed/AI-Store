@@ -1,0 +1,13 @@
+.sidbar-section {
+    width: 100%;
+    position: unset;
+}
+
+.tbl-content {
+    height: auto;
+}
+
+td {
+    font-weight: 600;
+    font-size: 14px;
+}

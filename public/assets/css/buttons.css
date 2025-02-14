@@ -1,0 +1,86 @@
+button.btn-primary,
+input.btn-primary,
+a.btn-primary {
+    background: var(--primary-color);
+    color: var(--dim-white);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+button.btn-primary:hover,
+input.btn-primary:hover,
+a.btn-primary:hover {
+    background: var(--primary-hover-color);
+}
+
+button.btn-sec,
+a.btn-sec {
+    background: var(--body-color);
+    color: var(--primary-color);
+    text-decoration: none;
+
+    outline: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+a.btn-sec.active {
+    background: var(--primary-color);
+    color: var(--body-color);
+}
+a:hover {
+    text-decoration: none!important;
+}
+.cta-btn {
+    display: flex;
+    gap: 10px;
+}
+
+button.btn-delete,
+a.btn-delete {
+    margin: 0px !important;
+    padding-block: 14px;
+    background: #df0202;
+}
+
+button.btn-update,
+a.btn-update {
+    margin: 0px !important;
+    padding-block: 14px;
+    background: #dfdb02;
+}
+
+button.btn-delete:hover,
+a.btn-delete:hover {
+    background: #df02028c;
+}
+
+button.btn-update:hover,
+a.btn-update:hover {
+    background: #dfdb0288;
+}
