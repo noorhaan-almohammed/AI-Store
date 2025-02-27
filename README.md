@@ -40,8 +40,9 @@ A-Store/
 │── routes/
 │   ├── web.php
 │── storage/
-│── python/
-│   ├── recommendation.py
+│   |──app
+│   │   |── python/
+│   │   │   |── recommendation.py
 │── .env
 │── composer.json
 │── package.json
