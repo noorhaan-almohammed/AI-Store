@@ -26,11 +26,9 @@ class ProductController extends Controller
         $category_id = $request->query('category');
         $categories = Category::all();
 
-        if ($category_id) {
-            $products = Product::with('photos')->where('category_id', $category_id)->get();
-        } else {
-            $products = Product::with('photos')->get();
-        }
+        $products = Product::with('photos')
+            ->when($category_id, fn($query) => $query->where('category_id', $category_id))
+            ->get();
 
         if ($request->ajax()) {
             return response()->json($products);

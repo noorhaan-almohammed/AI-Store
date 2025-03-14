@@ -85,7 +85,6 @@ class OrderController extends Controller
        $user = Auth::user();
        $cartItems = $user->cart->cartItems;
        $totalAmount = $cartItems->sum(fn($item) => $item->product->price * $item->quantity);
-
        Stripe::setApiKey('sk_test_51ONXM0DCnvSZulvv1v6Sp2LH8mPYzbgkE1sV3ECayqErl3s9pvJvDXGQzZP2tcX1zwhAb1HAmtrI2YLuneio2J6R004uiEGOSU');
 
        try {

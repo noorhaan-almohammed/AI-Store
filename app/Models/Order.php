@@ -68,7 +68,7 @@ class Order extends Model
 
         return $orderNumber;
     }
-  /**
+    /**
      * Get the order items for the order.
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
